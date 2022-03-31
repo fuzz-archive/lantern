@@ -1,0 +1,7 @@
+{
+  "extends": "@artiefuzzz/ts",
+  "compilerOptions": {
+    "target": "ESNext",
+    "outDir": "../build"
+  }
+}

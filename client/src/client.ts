@@ -1,7 +1,7 @@
 import { createTRPCClient, HTTPHeaders } from '@trpc/client'
 import { httpLink } from '@trpc/client/links/httpLink'
 import { splitLink } from '@trpc/client/links/splitLink'
-import { AppRouter } from '../../server/src/router'
+import type { AppRouter } from '../../server/src/router'
 import './polyfill'
 
 interface ClientOptions {
