@@ -1,10 +1,10 @@
 {
   "name": "@lantern/server",
   "version": "1.0.0",
-  "description": "tRPC api",
+  "description": "A tRPC API server",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p src"
   },
   "author": "ArtieFuzzz#8298",
   "license": "MIT",
