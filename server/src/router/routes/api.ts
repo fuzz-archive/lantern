@@ -10,7 +10,7 @@ export const apiRouter = createRouter()
   .nullish(),
   resolve({ input, ctx }) {
     return {
-      text: `Hello ${input?.username ?? ctx.user?.name ?? 'world!'}`
+      text: `Hello ${input?.username ?? ctx.user?.name ?? 'world'}!`
     }
   }
 })
