@@ -10,7 +10,7 @@ interface ClientOptions {
   headers?: HTTPHeaders
 }
 
-export function createClient(host: string, options: ClientOptions = {}) {
+export function createClient(host = 'https://lantern.cluster.ws', options: ClientOptions = {}) {
   const port = options.port ?? 80
   const prefix = options.prefix ?? '/trpc'
   const url = port ? `${host}:${port}${prefix}` : `${host}${prefix}`
