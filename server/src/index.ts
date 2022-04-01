@@ -38,4 +38,8 @@ app.register(fp(fastifyTRPCPlugin), {
   trpcOptions: { router: appRouter, createContext }
 })
 
+app.get('/', async (_, res) => {
+  return await res.redirect('/trpc/hello')
+})
+
 export default app
